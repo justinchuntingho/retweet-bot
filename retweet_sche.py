@@ -92,5 +92,5 @@ def retweet():
 
 print("Finished Preparation at " +  strftime("%Y-%m-%d %H:%M:%S", gmtime()))
 scheduler = BlockingScheduler()
-scheduler.add_job(retweet, 'interval', minutes=1, jitter=10)
+scheduler.add_job(retweet, 'interval', minutes=15, jitter=30)
 scheduler.start()
